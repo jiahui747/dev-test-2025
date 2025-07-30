@@ -25,7 +25,9 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
    - For example, if you're displaying details for [`/api/Beans/1`](https://jellybellywikiapi.onrender.com/api/Beans/1), you might also include a **random recipe** below the main content.
    - _Note:_ The API has **limited filtering capabilities**, so it’s acceptable if the secondary data (e.g., the recipe) does **not directly match** the flavor or item shown.
 
-5. The api has some weird behaviours, feel free to ignore edge cases where the data is returned wrong. e.g
+5. 5. **The API may behave unexpectedly — don't worry about edge cases where the data is returned incorrectly.**
+
+For example, the `ingredients` array below includes some formatting quirks:
 
 ```
  "ingredients": [
@@ -42,6 +44,8 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
         "Pink mini paper liners"
       ],
 ```
+
+You may treat lines like these as individual ingredients even if the formatting is inconsistent.
 
 ### Extra Points:
 

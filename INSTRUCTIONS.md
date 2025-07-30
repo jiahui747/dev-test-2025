@@ -16,7 +16,7 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
 1. Fetch data from the [Jelly Bean Wiki API](https://jellybellywikiapi.onrender.com/swagger/index.html).
 2. Display a list of fetched data on the home page in a structured and user-friendly way.
    - You may choose which endpoint you fetch to render here.
-   - Pagination?
+   - Include pagingation with a **fixed** page size of **10**.
 3. Add filtering or searching functionality to allow users to refine the list based on a specific criterion.
 4. **Create a detail page for each item in the list using Next.js dynamic routes.**  
    On this page, fetch and display **additional related data** to enrich the experience.

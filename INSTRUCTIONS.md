@@ -1,6 +1,6 @@
 # Frontend Developer Technical Test
 
-This task is designed to evaluate your skills in **React**, **Next.js**, **Typescript**, **TailwindCSS**, and **animation libraries** such as **GSAP** or **Framer Motion**. You will build a small application that fetches data from a public API and presents it with engaging animations and a responsive UI.
+This task is designed to evaluate your skills in **React**, **Next.js**, **Typescript**, **TailwindCSS**, and **animation libraries** such as **GSAP** or **Motion**. You will build a small application that fetches data from a public API and presents it with engaging animations and a responsive UI.
 
 ## Project Requirements
 
@@ -9,7 +9,7 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
 - **React with Next.js**
 - **Typescript**
 - **TailwindCSS** for styling
-- **GSAP** or **Framer Motion** for animations
+- **GSAP** or **Motion** for animations
 
 ### Features to Implement:
 
@@ -43,7 +43,7 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
 ### Extra Points:
 
 - Implement loading states for the API calls (e.g., spinners or skeleton loaders).
-- Implement up to two different types of animations using **GSAP** or **Framer Motion** (e.g., on element appearance, interaction, or transitions).
+- Implement up to two different types of animations using **GSAP** or **Motion** (e.g., on element appearance, interaction, or transitions).
 - Deploy the application (e.g., using **Vercel**) and provide a link.
 
 ## Getting Started

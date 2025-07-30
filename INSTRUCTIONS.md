@@ -16,14 +16,14 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
 1. Fetch data from the [Jelly Bean Wiki API](https://jellybellywikiapi.onrender.com/swagger/index.html).
 2. Display a list of fetched data on the home page in a structured and user-friendly way.
    - You may choose which endpoint you fetch to render here.
-   - Include pagingation with a **fixed** page size of **10**.
+   - Include pagination with a **fixed** page size of **10**.
 3. Add filtering or searching functionality to allow users to refine the list based on a specific criterion.
 4. **Create a detail page for each item in the list using Next.js dynamic routes.**  
    On this page, fetch and display **additional related data** to enrich the experience.
 
    - Use **at least two API endpoints** to gather data for this page.
    - For example, if you're displaying details for [`/api/Beans/1`](https://jellybellywikiapi.onrender.com/api/Beans/1), you might also include a **random recipe** below the main content.
-   - _Note:_ The API has **limited filtering capabilities**, so it’s acceptable if the secondary data (e.g., the recipe) does **not directly match** the flavor or item shown.
+   - _Note:_ The API has **limited filtering capabilities**, so it’s acceptable if the secondary data (e.g., the recipe) does **not directly match** the flavour or item shown.
 
 5. 5. **The API may behave unexpectedly — don't worry about edge cases where the data is returned incorrectly.**
 
@@ -39,8 +39,8 @@ For example, the `ingredients` array below includes some formatting quirks:
         "1 can (16 ounces) plus 1 cup vanilla frosting",
         "1/2 cup low sugar strawberry jam",
         "strained",
-        "1 cup Jelly Belly Jewel Valentine Mix (That's Jewel Bubble Gum", // counting these as seperate ingrediants is fine.
-        "Jewel Cream Soda and Jewel Very Cherry)",                          // counting these as seperate ingrediants is fine
+        "1 cup Jelly Belly Jewel Valentine Mix (That's Jewel Bubble Gum", // counting these as separate ingredients is fine.
+        "Jewel Cream Soda and Jewel Very Cherry)",                          // counting these as separate ingredients is fine
         "Pink mini paper liners"
       ],
 ```
@@ -55,7 +55,7 @@ You may treat lines like these as individual ingredients even if the formatting 
 
 ## Getting Started
 
-To get started, fork this repository and clone it to your local environment. Make sure you have **Node.js** installed, and then install the dependencies as you need.
+To get started, fork this repository and clone it to your local environment. Make sure you have **Node.js** installed and then install the dependencies as you need.
 
 Refer to the [Next.js documentation](https://nextjs.org/docs) for more information on how to work with Next.js or the README.md file for the project setup.
 

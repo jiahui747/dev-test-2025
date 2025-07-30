@@ -18,10 +18,13 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
    - You may choose which endpoint you fetch to render here.
    - Pagination?
 3. Add filtering or searching functionality to allow users to refine the list based on a specific criterion.
-4. Provide a detail page for each item in the list (using Next.js dynamic routes). On this page, fetch and display additional data related to the item.
-   - please pull in data from atleast two endpoints to enrich this page.
-   - e.g. if you are showing the data for https://jellybellywikiapi.onrender.com/api/Beans/1, perhaps display a random recipe after it.
-   - The api is limited in terms of filtering so in this example above, we would NOT worry if the recipe did not match the flavour of the jelly bean.
+4. **Create a detail page for each item in the list using Next.js dynamic routes.**  
+   On this page, fetch and display **additional related data** to enrich the experience.
+
+   - Use **at least two API endpoints** to gather data for this page.
+   - For example, if you're displaying details for [`/api/Beans/1`](https://jellybellywikiapi.onrender.com/api/Beans/1), you might also include a **random recipe** below the main content.
+   - _Note:_ The API has **limited filtering capabilities**, so it’s acceptable if the secondary data (e.g., the recipe) does **not directly match** the flavor or item shown.
+
 5. The api has some weird behaviours, feel free to ignore edge cases where the data is returned wrong. e.g
 
 ```

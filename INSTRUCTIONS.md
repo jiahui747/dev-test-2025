@@ -13,7 +13,7 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
 
 ### Getting started
 
-To get started, fork this repository and clone it to your local environment. Make sure you have **Node.js** installed
+To get started, fork this repository and clone it to your local environment. Make sure you have **Node.js** installed.
 
 **Initialize the application using `create-next-app`**
 

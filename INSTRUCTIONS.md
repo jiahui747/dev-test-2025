@@ -11,6 +11,18 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
 - **TailwindCSS** for styling
 - **GSAP** or **Motion** for animations
 
+### Getting started
+
+**Initialize the application using `create-next-app`**
+
+To get started, use the official Next.js setup tool:
+
+```bash
+npx create-next-app@latest my-app
+```
+
+We normally use the default options presented during the setup, and recommend for this test that you do the same.
+
 ### Features to Implement:
 
 1. Fetch data from the [Jelly Bean Wiki API](https://jellybellywikiapi.onrender.com/swagger/index.html).

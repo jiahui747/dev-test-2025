@@ -13,6 +13,8 @@ This task is designed to evaluate your skills in **React**, **Next.js**, **Types
 
 ### Getting started
 
+To get started, fork this repository and clone it to your local environment. Make sure you have **Node.js** installed.
+
 **Initialize the application using `create-next-app`**
 
 To get started, use the official Next.js setup tool:
@@ -22,6 +24,8 @@ npx create-next-app@latest my-app
 ```
 
 We normally use the default options presented during the setup, and recommend for this test that you do the same.
+
+Refer to the [Next.js documentation](https://nextjs.org/docs) for more information on how to work with Next.js
 
 ### Features to Implement:
 
@@ -64,12 +68,6 @@ You may treat lines like these as individual ingredients even if the formatting 
 - Implement loading states for the API calls (e.g., spinners or skeleton loaders).
 - Implement up to two different types of animations using **GSAP** or **Motion** (e.g., on element appearance, interaction, or transitions).
 - Deploy the application (e.g., using **Vercel**) and provide a link.
-
-## Getting Started
-
-To get started, fork this repository and clone it to your local environment. Make sure you have **Node.js** installed and then install the dependencies as you need.
-
-Refer to the [Next.js documentation](https://nextjs.org/docs) for more information on how to work with Next.js or the README.md file for the project setup.
 
 ## Tell Us About Your Approach
 

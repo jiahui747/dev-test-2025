@@ -37,7 +37,7 @@ We normally use the default options presented during the setup, and recommend fo
    - For example, if you're displaying details for [`/api/Beans/1`](https://jellybellywikiapi.onrender.com/api/Beans/1), you might also include a **random recipe** below the main content.
    - _Note:_ The API has **limited filtering capabilities**, so it’s acceptable if the secondary data (e.g., the recipe) does **not directly match** the flavour or item shown.
 
-5. 5. **The API may behave unexpectedly — don't worry about edge cases where the data is returned incorrectly.**
+5. **The API may behave unexpectedly — don't worry about edge cases where the data is returned incorrectly.**
 
 For example, the `ingredients` array below includes some formatting quirks:
 

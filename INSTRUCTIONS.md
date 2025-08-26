@@ -49,7 +49,7 @@ You choose how to power your data layer:
 
 ### Features to Implement
 
-> Considering a **list → detail** flow? additional instructions can be found in the companion doc: **“List + Detail Pattern (Optional)”**. Use it if helpful.
+> Considering a **list → detail** flow? additional instructions can be found in the companion doc:**[List + Details](./list-plus-detail.md/)**. Please follow these instructions if you choose this direction.
 
 #### Data Resilience (API/Data Edge Cases)
 

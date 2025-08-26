@@ -2,7 +2,7 @@
 
 This companion document describes a common approach: a **Home / Listing page** that links to **Detail pages** via **Next.js dynamic routes**. You can **use, adapt, or ignore** this pattern. It’s here to speed you up if you want a straightforward data‑driven flow.
 
-> For data choices and constraints, see **[Data Source (Flexible)](./instructions.md/#data-source-flexible)** in the main spec. If your dataset is small or local, scale the ideas sensibly.
+> For data choices and constraints, see **[Data Source (Flexible)](./INSTRUCTIONS.md/#data-source-flexible)** in the main spec. If your dataset is small or local, scale the ideas sensibly.
 
 ---
 

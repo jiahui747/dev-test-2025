@@ -41,7 +41,7 @@ We normally use the default options during setup and recommend the same for this
 
 You choose how to power your data layer:
 
-* **Jelly Belly Wiki API** (original default): [https://jellybellywikiapi.onrender.com/swagger/index.html](https://jellybellywikiapi.onrender.com/swagger/index.html)
+* **Jelly Belly Wiki API** : [https://jellybellywikiapi.onrender.com/swagger/index.html](https://jellybellywikiapi.onrender.com/swagger/index.html)
 * **Any other public API**, or **your own API**
 * **Local/mock data** (e.g., JSON files, fixtures) if you want to focus on interactions and visuals
 
@@ -49,26 +49,19 @@ You choose how to power your data layer:
 
 ### Features to Implement
 
-> Considering a **list → detail** flow? The full walkthrough now lives in the companion doc: **“List + Detail Pattern (Optional)”**. Use it if helpful.
+> Considering a **list → detail** flow? additional instructions can be found in the companion doc: **“List + Detail Pattern (Optional)”**. Use it if helpful.
 
 #### Data Resilience (API/Data Edge Cases)
 
 * **Don’t stress about quirky data.** Be resilient and pragmatic—degrade gracefully, sanitize if needed, and keep the UX smooth.
-* If you choose the Jelly Belly API, note it sometimes returns oddly formatted arrays. Treat lines as separate items if that’s simplest. For example:
+* If you choose the Jelly Belly API, note it sometimes returns oddly formatted arrays. Treat lines as separate items if the api delivers it incorrecty:
 
 ```json
 "ingredients": [
-  "1 box (16.5 ounces) French vanilla cake mix",
-  "3 large eggs",
-  "1 cup buttermilk",
-  "1/3 cup vegetable oil",
-  "Neon pink food coloring",
-  "1 can (16 ounces) plus 1 cup vanilla frosting",
-  "1/2 cup low sugar strawberry jam",
-  "strained",
+   "...",
   "1 cup Jelly Belly Jewel Valentine Mix (That's Jewel Bubble Gum",
   "Jewel Cream Soda and Jewel Very Cherry)",
-  "Pink mini paper liners"
+  "..."
 ]
 ```
 
@@ -88,7 +81,7 @@ Pick **one** primary direction (or mix and match). You do **not** need fully res
 * **Video scrub‑on‑scroll hero** with play/pause affordances
 * **Generative particles/backgrounds** (noise, flow fields) on Canvas/WebGL with simple controls
 
-> Aim for smooth, performant motion (60fps where possible), sensible durations/easing, and accessible defaults (`prefers-reduced-motion`).
+> Aim for smooth, performant motion (60fps where possible),  and sensible durations/easing.
 
 ---
 
@@ -109,7 +102,7 @@ Pick **one** primary direction (or mix and match). You do **not** need fully res
 * **UX polish & visual coherence:** consistent spacing, rhythm, type scale, and hierarchy
 * **Resilience:** sensible handling of odd data and network states
 * **Performance:** snappy interactions, minimal jank
-* **Communication:** trade-offs and reasoning captured in your README
+* **Communication:** trade-offs and reasoning captured in your README, given the time expection we expect to see tradeoffs.
 
 ---
 

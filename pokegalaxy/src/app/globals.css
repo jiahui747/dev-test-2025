@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --clr-deep-space: #000010;
+  --clr-cosmic-navy: #0a0f2c;
+  --clr-indigo-nebula: #4b0082;
+  --clr-purple-nebula: #800080;
+  --clr-electric-blue: #1e90ff;
+  --clr-galaxy-cyan: #4adfff;
+
+  /* ✨ Accents / Glow */
+  --clr-neon-orange: #ff6a00;
+  --clr-neon-red: #ff3131;
+  --clr-magenta: #ff00ff;
+  --clr-electric-violet: #8a2be2;
+  --clr-glow-white: #ffffff;
+
+  /* 🔲 Cards / UI Elements */
+  --clr-card-bg: #111122;
+  --clr-card-border: #4adfff;
+  --clr-hover-glow: #ff6a00;
+
+  /* 📝 Text */
+  --clr-title: #4adfff;
+  --clr-title-glow: #8a2be2;
+  --clr-subtitle: #c0c0ff;
+  --clr-body: #e0e0e0;
+  --clr-secondary: #8888aa;
+
+  /* 🎛 Stats Bars */
+  --clr-hp: #ff3131;
+  --clr-attack: #ff6a00;
+  --clr-defense: #ffd700;
+  --clr-speed: #4adfff;
+  --clr-special-attack: #8a2be2;
+  --clr-special-defense: #32cd32;
+}
+
+@theme inline {
+  --font-orbitron: var(--font-orbitron);
+}
+
+@layer utilities {
+  .neon-text-outline {
+    color: var(--clr-title);
+    text-shadow: 0 0 8px var(--clr-title), 0 0 16px var(--clr-title), 0 0 32px var(--clr-title-glow);
+  }
+
+  .neon-button {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-galaxy-cyan);
+    border: var(--clr-galaxy-cyan) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-galaxy-cyan), 0 0 0.5em 0 var(--clr-galaxy-cyan);
+  }
+}
+
+body {
+  background: var(--clr-deep-space);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* bg-gradient-to-b from-black via-blue-900 to-black p-8 */

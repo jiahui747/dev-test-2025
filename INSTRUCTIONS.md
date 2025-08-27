@@ -32,10 +32,13 @@ We normally use the default options during setup and recommend the same for this
 
 ### Optional Starter Design
 
-* Use our base visual kit to jump-start your UI:
+Use our base visual kit to jump-start your UI:
 
-  * **Figma Starter:** [DDB Example](https://www.figma.com/design/G3K9oHvj4pcRVXDYmWJu1j/Untitled?node-id=1-2&p=f&t=Q3dA4GJJ22SabE9q-11)
-* You can **use, adapt, or ignore** this file. We are **not** grading for pixel-perfect fidelity; we’re looking for a cohesive, polished experience.
+- You’ll receive an invite to a Figma design as an **optional starting point**.
+- Use it, adapt it, or ignore it and design from scratch—**all options are equally encouraged**.
+- The starter is there to help if you don’t want to spend time on visuals; it’s **not required**.
+- We’re not grading pixel-perfect matches; we care about a **cohesive, polished experience** and good UX.
+
 
 ### Data Source (Flexible)
 

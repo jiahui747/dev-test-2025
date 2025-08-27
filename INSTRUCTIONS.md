@@ -34,7 +34,7 @@ We normally use the default options during setup and recommend the same for this
 
 * Use our base visual kit to jump-start your UI:
 
-  * **Figma Starter:** *add your link here*
+  * **Figma Starter:** [DDB Example](https://www.figma.com/design/G3K9oHvj4pcRVXDYmWJu1j/Untitled?node-id=1-2&p=f&t=Q3dA4GJJ22SabE9q-11)
 * You can **use, adapt, or ignore** this file. We are **not** grading for pixel-perfect fidelity; we’re looking for a cohesive, polished experience.
 
 ### Data Source (Flexible)

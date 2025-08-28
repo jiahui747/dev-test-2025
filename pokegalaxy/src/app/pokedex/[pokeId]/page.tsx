@@ -5,6 +5,7 @@ import Image from "next/image";
 import { PokemonStats } from "./_components/PokemonStats";
 import { capitalizeFirstLetter } from "@/helpers/helpers";
 import { NeonButton } from "@/components/NeonButton";
+import { NeonTitle } from "@/components/NeonTitle";
 
 type PageProps = {
   params: Promise<{ pokeId: string }>;
@@ -17,9 +18,9 @@ const PokemonPage = async ({ params }: PageProps) => {
 
   return (
     <div className="flex items-center flex-col gap-8 p-8">
-      <p className="font-orbitron text-4xl sm:text-6xl font-bold neon-text-outline mb-20">
+      <NeonTitle className="text-4xl sm:text-6xl mb-20">
         {name ? capitalizeFirstLetter(name) : "Unknown Pokemon"}
-      </p>
+      </NeonTitle>
       <div className="flex items-center justify-center gap-10 flex-col-reverse md:flex-row">
         <PokemonStats stats={stats} />
         <Image

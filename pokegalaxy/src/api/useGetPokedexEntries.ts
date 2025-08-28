@@ -1,9 +1,23 @@
 import { POKEMON_API_BASE_URL } from "@/constants/constants";
-import { PokemonAPIResponse } from "@/types/types";
-import { useInfiniteQuery } from "@tanstack/react-query";
+import { PokedexEntry, PokemonAPIResponse } from "@/types/types";
+import {
+  FetchNextPageOptions,
+  InfiniteData,
+  InfiniteQueryObserverResult,
+  useInfiniteQuery,
+} from "@tanstack/react-query";
 import axios from "axios";
 
-const useGetPokedexEntries = () => {
+type GetPokedexEntriesReturnType = {
+  isLoading: boolean;
+  isError: boolean;
+  fetchNextPage: (
+    options?: FetchNextPageOptions | undefined
+  ) => Promise<InfiniteQueryObserverResult<InfiniteData<PokemonAPIResponse, unknown>, Error>>;
+  pokedexEntries: PokedexEntry[] | undefined;
+};
+
+const useGetPokedexEntries = (): GetPokedexEntriesReturnType => {
   const { data, isLoading, isError, fetchNextPage } = useInfiniteQuery<PokemonAPIResponse>({
     queryKey: ["pokemon/pokedex/entries"],
     queryFn: async ({ pageParam }) => (await axios.get(pageParam as string)).data,

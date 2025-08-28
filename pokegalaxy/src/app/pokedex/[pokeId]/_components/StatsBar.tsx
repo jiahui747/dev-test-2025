@@ -24,7 +24,7 @@ const StatsBar = ({ statName, stateValue }: { statName: string; stateValue: stri
   };
 
   return (
-    <div className="grid grid-cols-2 text-white mt-6 relative">
+    <div className="grid grid-cols-2 mt-6 relative">
       <p className="text-start">{statName}</p>
       <p className="text-end">{stateValue}</p>
       <div className="w-full h-0.5 absolute bottom-0.5 bg-blue-200 rounded-full" />

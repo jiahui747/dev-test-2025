@@ -6,8 +6,9 @@ import { usePathname } from "next/navigation";
 
 const Logo = () => {
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
-  if (pathname === "/") {
+  if (isHomePage) {
     return null;
   }
 

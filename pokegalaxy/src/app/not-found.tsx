@@ -15,23 +15,11 @@ const CustomNotFoundPage = () => {
           height={400}
           className="mx-auto mt-20"
         />
-        <div className="absolute top-52 left-25">
-          <motion.div
-            className="w-10 h-10 bg-amber-200 rounded-full blur-lg"
-            animate={{
-              opacity: [0.1, 1, 0.7, 1, 0.1],
-            }}
-            transition={{ duration: 2.5, repeat: Infinity }}
-          />
+        <div className="absolute top-50 left-25">
+          <GlowyCheek />
         </div>
         <div className="absolute top-50 right-38">
-          <motion.div
-            className="w-15 h-15 bg-amber-200 rounded-full blur-lg"
-            animate={{
-              opacity: [0.1, 1, 0.7, 1, 0.1],
-            }}
-            transition={{ duration: 2.5, repeat: Infinity }}
-          />
+          <GlowyCheek />
         </div>
       </div>
       <motion.p
@@ -45,6 +33,18 @@ const CustomNotFoundPage = () => {
       </motion.p>
       <NeonButton href="/pokedex">Back to Pokédex</NeonButton>
     </div>
+  );
+};
+
+const GlowyCheek = () => {
+  return (
+    <motion.div
+      className="w-15 h-15 bg-amber-200 rounded-full blur-lg"
+      animate={{
+        opacity: [0.1, 1, 0.7, 1, 0.1],
+      }}
+      transition={{ duration: 2.5, repeat: Infinity }}
+    />
   );
 };
 

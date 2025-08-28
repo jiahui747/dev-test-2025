@@ -29,7 +29,7 @@ const PokedexEntries = ({ entries, isLoading, isError }: PokedexEntriesProps) =>
   if (isError) {
     return (
       <p className="text-amber-300 mt-10 border border-solid p-3">
-        !! Failed to load Pokémons. Please try again later.
+        !! Failed to load Pokémons. Please try again later or refresh the page. !!
       </p>
     );
   }

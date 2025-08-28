@@ -2,33 +2,13 @@
 
 :root {
   --clr-deep-space: #000010;
-  --clr-cosmic-navy: #0a0f2c;
-  --clr-indigo-nebula: #4b0082;
-  --clr-purple-nebula: #800080;
-  --clr-electric-blue: #1e90ff;
   --clr-galaxy-cyan: #4adfff;
-
-  /* ✨ Accents / Glow */
-  --clr-neon-orange: #ff6a00;
-  --clr-neon-red: #ff3131;
-  --clr-magenta: #ff00ff;
-  --clr-electric-violet: #8a2be2;
   --clr-glow-white: #ffffff;
   --clr-electricity: #eac90a;
 
-  /* 🔲 Cards / UI Elements */
-  --clr-card-bg: #111122;
-  --clr-card-border: #4adfff;
-  --clr-hover-glow: #ff6a00;
-
-  /* 📝 Text */
   --clr-title: #4adfff;
   --clr-title-glow: #8a2be2;
-  --clr-subtitle: #c0c0ff;
-  --clr-body: #e0e0e0;
-  --clr-secondary: #8888aa;
 
-  /* 🎛 Stats Bars */
   --clr-hp: #ff3131;
   --clr-attack: #ff6a00;
   --clr-defense: #ffd700;
@@ -49,7 +29,8 @@
 
   .faulty-electric-text {
     color: var(--clr-electricity);
-    text-shadow: -1px -1px 0 #675252, 1px -1px 0 #675252, -1px 1px 0 #675252, 1px 1px 0 #675252,
+    text-shadow: -1px -1px 0 var(--clr-galaxy-cyan), 1px -1px 0 var(--clr-galaxy-cyan),
+      -1px 1px 0 var(--clr-galaxy-cyan), 1px 1px 0 var(--clr-galaxy-cyan),
       0 0 8px var(--color-amber-200), 0 0 16px var(--color-amber-200),
       0 0 32px var(--color-amber-200);
   }
@@ -82,4 +63,5 @@
 body {
   background: var(--clr-deep-space);
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }

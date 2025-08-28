@@ -1,18 +1,17 @@
-"use client";
+import { Metadata } from "next";
 
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { gsap } from "gsap";
+const metadata: Metadata = {
+  title: "pokedex - Pokemon Galaxy",
+  description: "Discover and explore every Pokémon in our comprehensive Pokédex",
+};
 
 const PokedexLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const queryClient = new QueryClient();
-  gsap.registerPlugin(ScrollTrigger);
-
-  return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>;
+  return <>{children}</>;
 };
 
 export default PokedexLayout;
+export { metadata };

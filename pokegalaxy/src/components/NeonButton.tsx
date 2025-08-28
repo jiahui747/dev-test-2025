@@ -1,9 +1,9 @@
 import Link, { LinkProps } from "next/link";
 import { PropsWithChildren } from "react";
 
-const NeonButton = ({ children }: PropsWithChildren<LinkProps>) => {
+const NeonButton = ({ children, href }: PropsWithChildren<LinkProps>) => {
   return (
-    <Link className="neon-button mt-20" href="/pokedex">
+    <Link className="neon-button mt-20" href={href}>
       {children}
     </Link>
   );

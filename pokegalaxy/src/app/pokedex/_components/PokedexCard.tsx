@@ -35,7 +35,7 @@ const PokedexCard = ({ name, id }: PokedexCardProps) => {
           blurDataURL="/sprite-placeholder.png"
           onLoadingComplete={() => setIsLoading(false)}
         />
-        <p className="text-white text-base">{`#${id} ${capitalizeFirstLetter(name)}`}</p>
+        <p className="text-base">{`#${id} ${capitalizeFirstLetter(name)}`}</p>
       </motion.div>
     </Link>
   );

@@ -26,8 +26,14 @@ const PokemonPage = async ({ params }: PageProps) => {
           alt={name ?? "unknown"}
           width={400}
           height={400}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL="/pokemon-substitute.png"
         />
       </div>
+      <a className="neon-button mt-10" href="/pokedex">
+        Back to Pokédex
+      </a>
     </div>
   );
 };

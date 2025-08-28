@@ -5,7 +5,7 @@ const POKEMON_SPRIT_IMAGE_BASE_URL =
 
 const POKEMON_API_BASE_URL = "https://pokeapi.co/api/v2/pokemon";
 
-const HIGHEST_STAT_VALUE = 750;
+const HIGHEST_STAT_VALUE = 300;
 
 export {
   FULL_POKEMON_IMAGE_BASE_URL,

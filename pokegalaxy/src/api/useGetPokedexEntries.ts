@@ -6,10 +6,8 @@ import axios from "axios";
 const useGetPokedexEntries = () => {
   const { data, isLoading, isError, fetchNextPage } = useInfiniteQuery<PokemonAPIResponse>({
     queryKey: ["pokemon/pokedex/entries"],
-    queryFn: async ({ pageParam }) =>
-      (await axios.get(`${POKEMON_API_BASE_URL}?limit=100&offset=${(pageParam as number) * 100}`))
-        .data,
-    initialPageParam: 0,
+    queryFn: async ({ pageParam }) => (await axios.get(pageParam as string)).data,
+    initialPageParam: `${POKEMON_API_BASE_URL}?limit=100&offset=0`,
     getNextPageParam: (lastPage) => {
       return lastPage.next ?? undefined;
     },
@@ -19,7 +17,7 @@ const useGetPokedexEntries = () => {
     isLoading,
     isError,
     fetchNextPage,
-    pokedexEntries: data?.pages[0].results,
+    pokedexEntries: data?.pages.flatMap((res) => res.results),
   };
 };
 

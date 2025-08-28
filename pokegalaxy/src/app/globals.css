@@ -46,6 +46,12 @@
     text-shadow: 0 0 8px var(--clr-title), 0 0 16px var(--clr-title), 0 0 32px var(--clr-title-glow);
   }
 
+  .faulty-electric-text {
+    color: var(--clr-defense);
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff,
+      0 0 8px var(--clr-glow-white), 0 0 16px var(--clr-glow-white), 0 0 32px var(--clr-glow-white);
+  }
+
   .neon-button {
     display: inline-block;
     cursor: pointer;
@@ -57,11 +63,21 @@
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
     box-shadow: inset 0 0 0.5em 0 var(--clr-galaxy-cyan), 0 0 0.5em 0 var(--clr-galaxy-cyan);
   }
+
+  .white-glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  .white-neon-glow {
+    box-shadow: 0 0 5px var(--clr-glow-white), 0 0 10px var(--clr-glow-white);
+  }
 }
 
 body {
   background: var(--clr-deep-space);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* bg-gradient-to-b from-black via-blue-900 to-black p-8 */

@@ -55,4 +55,12 @@ type PokemonBaseInfo = {
   types: PokemonType[];
 };
 
-export type { PokedexEntry, PokemonAPIResponse, PokemonBaseInfo, PokemonStat };
+type PokemonSearchAPIResponse = PokemonBaseInfo;
+
+export type {
+  PokedexEntry,
+  PokemonAPIResponse,
+  PokemonBaseInfo,
+  PokemonStat,
+  PokemonSearchAPIResponse,
+};

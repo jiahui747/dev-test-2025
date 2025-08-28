@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { NeonButton } from "@/components/NeonButton";
+import { BLURRED_PIKACHU } from "@/constants/placeholder";
 
 const CustomNotFoundPage = () => {
   return (
@@ -14,6 +15,9 @@ const CustomNotFoundPage = () => {
           width={400}
           height={400}
           className="mx-auto mt-20"
+          priority
+          placeholder="blur"
+          blurDataURL={BLURRED_PIKACHU}
         />
         <div className="absolute top-50 left-25">
           <GlowyCheek />

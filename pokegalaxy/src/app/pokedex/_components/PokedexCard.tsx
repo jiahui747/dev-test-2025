@@ -38,7 +38,7 @@ const PokedexCard = ({ name, id }: PokedexCardProps) => {
           height={150}
           width={150}
           alt={name ?? "unknown"}
-          loading="lazy"
+          priority
           placeholder="blur"
           blurDataURL="/sprite-placeholder.png"
           onLoadingComplete={() => setIsLoading(false)}

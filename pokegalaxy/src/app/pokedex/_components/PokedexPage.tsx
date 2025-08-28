@@ -1,10 +1,10 @@
 "use client";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGetPokedexEntries } from "@/api/useGetPokedexEntries";
+import { useGetPokedexEntries } from "@/hooks/useGetPokedexEntries";
 import { PokedexEntries } from "./PokedexEntries";
 import { useLayoutEffect } from "react";
-import { useSearchPokemon } from "@/api/useSearchPokemon";
+import { useSearchPokemon } from "@/hooks/useSearchPokemon";
 import { NeonTitle } from "@/components/NeonTitle";
 
 const PokedexPage = () => {

@@ -1,11 +1,11 @@
-import { FULL_POKEMON_IMAGE_BASE_URL, POKEMON_API_BASE_URL } from "@/constants/constants";
+import { POKEMON_API_BASE_URL } from "@/constants/constants";
 import { PokemonBaseInfo } from "@/types/types";
 import axios from "axios";
-import Image from "next/image";
 import { PokemonStats } from "./_components/PokemonStats";
 import { capitalizeFirstLetter } from "@/helpers/helpers";
 import { NeonButton } from "@/components/NeonButton";
 import { NeonTitle } from "@/components/NeonTitle";
+import { PokemonFullBody } from "./_components/PokemonFullBody";
 
 type PageProps = {
   params: Promise<{ pokeId: string }>;
@@ -21,17 +21,9 @@ const PokemonPage = async ({ params }: PageProps) => {
       <NeonTitle className="text-4xl sm:text-6xl mb-20">
         {name ? capitalizeFirstLetter(name) : "Unknown Pokemon"}
       </NeonTitle>
-      <div className="flex items-center justify-center gap-10 flex-col-reverse md:flex-row">
+      <div className="flex items-center justify-center gap-10 flex-col-reverse lg:flex-row">
         <PokemonStats stats={stats} />
-        <Image
-          src={name ? `${FULL_POKEMON_IMAGE_BASE_URL}/${name}.jpg` : "/unknown-pokemon.png"}
-          alt={name ?? "unknown"}
-          width={400}
-          height={400}
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL="/pokemon-substitute.png"
-        />
+        <PokemonFullBody name={name || ""} />
       </div>
       <NeonButton href="/pokedex">Back to Pokédex</NeonButton>
     </div>

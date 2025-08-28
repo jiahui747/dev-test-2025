@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import { NeonButton } from "@/components/NeonButton";
 
 const CustomNotFoundPage = () => {
   return (
@@ -42,9 +43,7 @@ const CustomNotFoundPage = () => {
       >
         404 - Not found
       </motion.p>
-      <a className="neon-button mt-20" href="/pokedex">
-        Back to Pokédex
-      </a>
+      <NeonButton href="/pokedex">Back to Pokédex</NeonButton>
     </div>
   );
 };

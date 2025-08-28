@@ -3,6 +3,7 @@ import { capitalizeFirstLetter } from "@/helpers/helpers";
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 type PokedexCardProps = {
   name: string;
@@ -13,7 +14,7 @@ const PokedexCard = ({ name, id }: PokedexCardProps) => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <a href={`/pokedex/${id}`}>
+    <Link href={`/pokedex/${id}`}>
       <motion.div
         className={`${
           isLoading ? "animate-pulse" : "animate-none"
@@ -36,7 +37,7 @@ const PokedexCard = ({ name, id }: PokedexCardProps) => {
         />
         <p className="text-white text-base">{`#${id} ${capitalizeFirstLetter(name)}`}</p>
       </motion.div>
-    </a>
+    </Link>
   );
 };
 

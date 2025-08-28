@@ -4,6 +4,7 @@ import axios from "axios";
 import Image from "next/image";
 import { PokemonStats } from "./_components/PokemonStats";
 import { capitalizeFirstLetter } from "@/helpers/helpers";
+import { NeonButton } from "@/components/NeonButton";
 
 type PageProps = {
   params: Promise<{ pokeId: string }>;
@@ -31,9 +32,7 @@ const PokemonPage = async ({ params }: PageProps) => {
           blurDataURL="/pokemon-substitute.png"
         />
       </div>
-      <a className="neon-button mt-10" href="/pokedex">
-        Back to Pokédex
-      </a>
+      <NeonButton href="/pokedex">Back to Pokédex</NeonButton>
     </div>
   );
 };

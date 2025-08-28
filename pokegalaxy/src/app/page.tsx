@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Footer } from "@/components/Footer";
+import { NeonButton } from "@/components/NeonButton";
 
 const Home = () => {
   return (
@@ -10,9 +11,7 @@ const Home = () => {
         <p className="mt-6 text-center text-lg max-w-xl text-gray-300">
           Explore every Pokémon in a cosmic journey through the Pokédex
         </p>
-        <a className="neon-button mt-6" href="/pokedex">
-          Explore Pokédex
-        </a>
+        <NeonButton href="/pokedex">Explore Pokédex</NeonButton>
       </main>
       <Footer />
     </div>

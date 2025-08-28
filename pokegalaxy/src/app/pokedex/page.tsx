@@ -1,3 +1,7 @@
+"use client";
+
+import { PokedexEntries } from "./_components/PokedexEntries";
+
 const PokedexPage = () => {
   return (
     <div className="flex items-center min-h-screen p-20 flex-col">
@@ -10,7 +14,9 @@ const PokedexPage = () => {
           className="mt-6 p-2 border border-gray-300 rounded w-full h-14 text-white"
         />
       </div>
-      <div className="grid grid-cols-3 gap-6 mt-10"></div>
+      <div className="grid grid-cols-3 gap-6 mt-10">
+        <PokedexEntries />
+      </div>
     </div>
   );
 };

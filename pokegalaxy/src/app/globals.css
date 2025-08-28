@@ -47,6 +47,15 @@
     box-shadow: inset 0 0 0.5em 0 var(--clr-galaxy-cyan), 0 0 0.5em 0 var(--clr-galaxy-cyan);
   }
 
+  .neon-button:hover,
+  .neon-button:focus {
+    color: white;
+    box-shadow: inset 0 0 1em 0 var(--clr-galaxy-cyan), 0 0 1em 0 var(--clr-galaxy-cyan);
+    text-shadow: 0 0 0.25em hsl(0 0% 100% / 0.5), 0 0 0.75em currentColor;
+    transition: box-shadow 0.3s ease-in-out, text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
   .white-glass-card {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);

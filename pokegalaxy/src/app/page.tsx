@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Footer } from "@/components/Footer";
 import { NeonButton } from "@/components/NeonButton";
 import { NeonTitle } from "@/components/NeonTitle";
 
@@ -14,7 +13,6 @@ const Home = () => {
         </p>
         <NeonButton href="/pokedex">Explore Pokédex</NeonButton>
       </main>
-      <Footer />
     </div>
   );
 };

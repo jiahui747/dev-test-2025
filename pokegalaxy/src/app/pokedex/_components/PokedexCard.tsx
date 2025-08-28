@@ -26,6 +26,14 @@ const PokedexCard = ({ name, id }: PokedexCardProps) => {
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <Image
+          src="/logo.png"
+          height={150}
+          width={150}
+          alt="pokeball"
+          loading="lazy"
+          className={`absolute opacity-20 ${isLoading ? "hidden" : ""}`}
+        />
+        <Image
           src={`${POKEMON_SPRIT_IMAGE_BASE_URL}/${id}.png`}
           height={150}
           width={150}
@@ -34,6 +42,7 @@ const PokedexCard = ({ name, id }: PokedexCardProps) => {
           placeholder="blur"
           blurDataURL="/sprite-placeholder.png"
           onLoadingComplete={() => setIsLoading(false)}
+          className="relative z-10"
         />
         <p className="text-base">{`#${id} ${capitalizeFirstLetter(name)}`}</p>
       </motion.div>

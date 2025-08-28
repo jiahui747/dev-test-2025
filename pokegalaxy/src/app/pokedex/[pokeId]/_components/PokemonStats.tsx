@@ -8,7 +8,7 @@ type PokemonStatsProps = {
 
 const PokemonStats = ({ stats }: PokemonStatsProps) => {
   return (
-    <div className="border border-solid border-white p-10 rounded-md w-1/2 white-glass-card">
+    <div className="border border-solid border-white p-10 rounded-md white-glass-card min-w-[300px]">
       <p className="bold text-white text-2xl">Base stats</p>
       {stats?.map((stat) => (
         <StatsBar

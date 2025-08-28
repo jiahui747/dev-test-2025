@@ -42,7 +42,7 @@ const PokedexPage = () => {
     : pokedexEntries;
 
   return (
-    <div className="flex items-center min-h-screen p-20 flex-col">
+    <div className="flex items-center min-h-screen md:p-20 p-10 flex-col">
       <div className="w-full max-w-2xl flex flex-col items-center gap-10">
         <p className="font-orbitron text-6xl font-bold neon-text-outline text-center">Pokédex</p>
         <input

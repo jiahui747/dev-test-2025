@@ -14,6 +14,7 @@
   --clr-magenta: #ff00ff;
   --clr-electric-violet: #8a2be2;
   --clr-glow-white: #ffffff;
+  --clr-electricity: #eac90a;
 
   /* 🔲 Cards / UI Elements */
   --clr-card-bg: #111122;
@@ -47,9 +48,10 @@
   }
 
   .faulty-electric-text {
-    color: var(--clr-defense);
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff,
-      0 0 8px var(--clr-glow-white), 0 0 16px var(--clr-glow-white), 0 0 32px var(--clr-glow-white);
+    color: var(--clr-electricity);
+    text-shadow: -1px -1px 0 #675252, 1px -1px 0 #675252, -1px 1px 0 #675252, 1px 1px 0 #675252,
+      0 0 8px var(--color-amber-200), 0 0 16px var(--color-amber-200),
+      0 0 32px var(--color-amber-200);
   }
 
   .neon-button {

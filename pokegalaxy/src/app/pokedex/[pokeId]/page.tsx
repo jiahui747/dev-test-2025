@@ -15,11 +15,11 @@ const PokemonPage = async ({ params }: PageProps) => {
   const { name, stats = [] } = pokemonInfo || {};
 
   return (
-    <div className="flex items-center flex-col gap-8 min-h-screen p-8">
-      <p className="font-orbitron text-6xl font-bold neon-text-outline mb-20">
+    <div className="flex items-center flex-col gap-8 p-8">
+      <p className="font-orbitron text-4xl sm:text-6xl font-bold neon-text-outline mb-20">
         {name ? capitalizeFirstLetter(name) : "Unknown Pokemon"}
       </p>
-      <div className="flex items-center justify-center gap-10">
+      <div className="flex items-center justify-center gap-10 flex-col-reverse md:flex-row">
         <PokemonStats stats={stats} />
         <Image
           src={name ? `${FULL_POKEMON_IMAGE_BASE_URL}/${name}.jpg` : "/unknown-pokemon.png"}

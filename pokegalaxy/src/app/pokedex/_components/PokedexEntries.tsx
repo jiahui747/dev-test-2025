@@ -19,7 +19,7 @@ const PokedexEntries = ({ entries, isLoading, isError }: PokedexEntriesProps) =>
           animate={{ rotate: [0, 360] }}
           transition={{ duration: 1, repeat: Infinity, ease: "circInOut" }}
         >
-          <Image src="/loading-spinner-2.png" alt="loading" width={100} height={100} />
+          <Image src="/loading-spinner.png" alt="loading" width={100} height={100} />
         </motion.div>
         <p className="text-white">Loading Pokémons...</p>
       </div>
@@ -40,7 +40,7 @@ const PokedexEntries = ({ entries, isLoading, isError }: PokedexEntriesProps) =>
   };
 
   return (
-    <div className="grid grid-cols-3 gap-6 mt-10 w-full">
+    <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mt-10 w-full">
       {entries &&
         entries.map((entry) => (
           <PokedexCard key={entry.name} name={entry.name} id={getIdFromUrl(entry.url)} />
